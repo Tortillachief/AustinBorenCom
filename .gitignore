@@ -22,3 +22,9 @@ $RECYCLE.BIN/
 
 # Node (in case tooling is added later)
 node_modules/
+
+# Claude Code local config
+.claude/settings.local.json
+
+# Brainstorming session files
+.superpowers/
