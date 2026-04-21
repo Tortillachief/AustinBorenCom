@@ -4,30 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Deep — Austin Boren</title>
-  <meta name="description" content="Questions that matter. A conversation starter app for iOS with 180 unique questions across three modes." />
+  <title>Chroma Guess — Austin Boren</title>
+  <meta name="description" content="How well do you really see color? Memorize a shade, then recreate it with HSL sliders. Simple to play, surprisingly hard to master." />
   <meta name="author" content="Austin Boren" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://austinboren.com/deep/" />
+  <link rel="canonical" href="https://austinboren.com/chromaguess/" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://austinboren.com/deep/" />
-  <meta property="og:title" content="Deep — Austin Boren" />
-  <meta property="og:description" content="Questions that matter. A conversation starter app for iOS." />
-  <meta property="og:image" content="https://austinboren.com/images/deep.png" />
+  <meta property="og:url" content="https://austinboren.com/chromaguess/" />
+  <meta property="og:title" content="Chroma Guess — Austin Boren" />
+  <meta property="og:description" content="Memorize a shade, then recreate it with HSL sliders. Simple to play, surprisingly hard to master." />
+  <meta property="og:image" content="https://austinboren.com/images/chromaGuess.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Deep — Austin Boren" />
-  <meta name="twitter:description" content="Questions that matter. A conversation starter app for iOS." />
-  <meta name="twitter:image" content="https://austinboren.com/images/deep.png" />
+  <meta name="twitter:title" content="Chroma Guess — Austin Boren" />
+  <meta name="twitter:description" content="Memorize a shade, then recreate it with HSL sliders. Simple to play, surprisingly hard to master." />
+  <meta name="twitter:image" content="https://austinboren.com/images/chromaGuess.png" />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Deep",
-    "url": "https://austinboren.com/deep/",
-    "applicationCategory": "SocialNetworkingApplication",
+    "name": "Chroma Guess",
+    "url": "https://austinboren.com/chromaguess/",
+    "applicationCategory": "GameApplication",
     "operatingSystem": "iOS",
     "author": { "@type": "Person", "name": "Austin Boren", "url": "https://austinboren.com" }
   }
@@ -103,7 +103,7 @@
       z-index: 9996;
       pointer-events: none;
       opacity: 0.045;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cfilter id='n'%3E%3CFeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='280' height='280' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='280' height='280' filter='url(%23n)'/%3E%3C/svg%3E");
     }
 
     .reveal {
@@ -314,8 +314,8 @@
 
       .nav-links { gap: 20px; }
 
-      section { padding: 56px 0; }
-      #hero   { padding: 60px 0 48px; }
+      section   { padding: 56px 0; }
+      #hero     { padding: 60px 0 48px; }
 
       .app-hero { grid-template-columns: 1fr; gap: 24px; }
       .app-hero-icon { width: 80px; height: 80px; }
@@ -359,12 +359,12 @@
   <section id="hero">
     <div class="container">
       <div class="app-hero">
-        <img class="app-hero-icon reveal" data-delay="1" src="../images/deep.png" alt="Deep app icon" />
+        <img class="app-hero-icon reveal" data-delay="1" src="../images/chromaGuess.png" alt="Chroma Guess app icon" />
         <div class="reveal" data-delay="2">
           <span class="hero-eyebrow">iOS App</span>
-          <h1 class="app-name">Deep.</h1>
-          <p class="app-tagline">Questions that matter.</p>
-          <a class="app-store-btn" href="https://apps.apple.com/us/app/deep/id6749493910" target="_blank" rel="noopener noreferrer">
+          <h1 class="app-name">Chroma Guess</h1>
+          <p class="app-tagline">How well do you really see color? Memorize a shade, then recreate it with HSL sliders. Simple to play, surprisingly hard to master.</p>
+          <a class="app-store-btn" href="https://apps.apple.com/us/app/chroma-guess/id6762560840" target="_blank" rel="noopener noreferrer">
             Download on the App Store ↗
           </a>
         </div>
@@ -377,10 +377,23 @@
   <section id="about">
     <div class="container">
       <p class="section-label reveal" data-delay="1">About</p>
-      <p class="reveal" data-delay="2" style="font-size:13px;color:var(--text-dim);line-height:1.85;max-width:620px;">
-        A conversation starter app with 180 unique questions across three modes — Icebreakers, Confessions,
-        and Deep — designed to spark meaningful dialogue anywhere. Free on the App Store.
-      </p>
+      <div class="reveal" data-delay="2" style="font-size:13px;color:var(--text-dim);line-height:1.85;max-width:620px;">
+        <p style="margin-bottom:16px;">
+          A quick, brain-teasing game about how well you actually see color. You get a few seconds
+          to memorize a random color. Then it disappears, and you recreate it using three sliders:
+          hue, saturation, and lightness. The closer your guess, the higher your score.
+        </p>
+        <p style="margin-bottom:16px;">
+          That's the whole game. But picking the right shade from memory is a lot harder than it sounds.
+        </p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;">
+          <li>Pure HSL sliders — no presets, no cheating</li>
+          <li>Adjustable difficulty and memorize time</li>
+          <li>Accessibility-friendly text sizes (S / M / L / XL)</li>
+          <li>Haptic feedback you can toggle off</li>
+          <li>Works offline. No accounts, no ads, no tracking.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -390,30 +403,27 @@
     <div class="container">
       <p class="section-label reveal" data-delay="1">Privacy Policy</p>
       <div class="reveal" data-delay="2">
-        <p class="policy-date">Last updated: August 2025</p>
+        <p class="policy-date">Last updated: April 20, 2026</p>
         <div class="policy-body">
-          <p>This Privacy Policy describes how Deep handles information when you use our iOS application.</p>
+          <p>This Privacy Policy describes how Chroma Guess handles information when you use our iOS application.</p>
 
           <h3>No Data Collection</h3>
-          <p>Deep does not collect, transmit, or share any personal information. All data generated by your use of the app remains exclusively on your device.</p>
-
-          <h3>Local Storage Only</h3>
-          <p>Deep stores the following preferences locally on your device: card viewing options, hidden cards, theme selection (colorful or grayscale), welcome message display status, and shuffle mode preference. This data never leaves your device and is not accessible to us or any third party.</p>
-
-          <h3>No Account Required</h3>
-          <p>Deep requires no registration, login credentials, or profile creation. All features are immediately available upon installation.</p>
+          <p>Chroma Guess does not collect, transmit, or share any personal information. All data generated by your use of the app remains exclusively on your device.</p>
 
           <h3>Offline Operation</h3>
-          <p>Deep functions entirely offline. The app does not send data to external servers, use analytics services, collect usage statistics, or share information with third parties.</p>
+          <p>Chroma Guess functions entirely offline. The app does not send data to external servers, use analytics services, collect usage statistics, or share information with third parties. All game assets, including fonts, are bundled within the app.</p>
 
-          <h3>Data Control</h3>
-          <p>Since all data is stored locally on your device, you have complete control. Uninstalling the app permanently removes all stored preferences.</p>
+          <h3>Local Storage Only</h3>
+          <p>Game preferences and session state are stored locally on your device. This data never leaves your device and is not accessible to us or any third party.</p>
 
-          <h3>Mature Content</h3>
-          <p>Deep contains mature themes and is intended for users aged 17 and older. We do not knowingly collect information from children.</p>
+          <h3>No Account Required</h3>
+          <p>Chroma Guess requires no registration, login credentials, or profile creation. All features are immediately available upon installation.</p>
+
+          <h3>Safe for All Ages</h3>
+          <p>Because no data is collected, Chroma Guess is safe for users of all ages.</p>
 
           <h3>Changes to This Policy</h3>
-          <p>We may update this Privacy Policy periodically. Check this page for the most current version.</p>
+          <p>If this policy changes in a future version, we will update the "Last updated" date above and note the change in the app's release notes.</p>
 
           <h3>Contact Us</h3>
           <p>If you have questions about this Privacy Policy, contact us at <a href="mailto:austinborendevelopment@gmail.com" style="color:var(--accent);text-decoration:none;">austinborendevelopment@gmail.com</a>.</p>
@@ -427,7 +437,7 @@
   <section id="support">
     <div class="container">
       <p class="section-label reveal" data-delay="1">Support</p>
-      <a class="connect-link reveal" data-delay="2" href="mailto:austinborendevelopment@gmail.com" aria-label="Email support for Deep">
+      <a class="connect-link reveal" data-delay="2" href="mailto:austinborendevelopment@gmail.com" aria-label="Email support for Chroma Guess">
         austinborendevelopment@gmail.com
       </a>
     </div>
